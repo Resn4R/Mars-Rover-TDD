@@ -12,18 +12,20 @@ struct Rover {
     var yPos = 0
     var direction = "N"
     
-//    static let directives: [String : Command] = [
-//        "F" : MoveForward(),
-//        "B" : MoveBackward(),
-//        "L" : TurnLeft(),
-//        "R" : TurnRight()
-//    ]
+    static let directives: [String : Command] = [
+        "F" : MoveForward(),
+        "B" : MoveBackward(),
+        "L" : TurnLeft(),
+        "R" : TurnRight()
+    ]
     
     var buffer: [String] = []
-//    var orderQueue: [Command] = []
-//    
-//    mutating func addCommand(_ command: String) {
-//        orderQueue.append( Self.directives[command]! )
-//    }
+    var orderQueue: [Command] = []
+    
+    mutating func addToOrderQueue() {
+        buffer.forEach { order in
+            orderQueue.append( Self.directives[order]! )
+        }
+    }
     
 }

@@ -13,7 +13,7 @@ protocol Command {
 
 struct TurnRight: Command {
     func execute() {
-        
+
     }
     
 }
