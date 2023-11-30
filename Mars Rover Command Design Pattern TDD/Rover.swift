@@ -12,5 +12,18 @@ struct Rover {
     var yPos = 0
     var direction = "N"
     
-    private var buffer: [Command] = []
+//    static let directives: [String : Command] = [
+//        "F" : MoveForward(),
+//        "B" : MoveBackward(),
+//        "L" : TurnLeft(),
+//        "R" : TurnRight()
+//    ]
+    
+    var buffer: [String] = []
+//    var orderQueue: [Command] = []
+//    
+//    mutating func addCommand(_ command: String) {
+//        orderQueue.append( Self.directives[command]! )
+//    }
+    
 }

@@ -15,4 +15,14 @@ final class Mars_Rover_Command_Design_Pattern_TDDTests: XCTestCase {
         
         XCTAssertEqual([String(rover.xPos), String(rover.yPos), rover.direction], defaultStartingPoint)
     }
+    
+    func testRoverCommandBuffer() {
+        var rover = Rover()
+        let commands = ["R", "F"]
+        
+        commands.forEach{ rover.buffer.append($0) }
+        
+        XCTAssertEqual(rover.buffer, commands)
+        
+    }
 }
