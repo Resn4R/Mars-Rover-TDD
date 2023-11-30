@@ -20,11 +20,13 @@ final class Mars_Rover_Command_Design_Pattern_TDDTests: XCTestCase {
         var rover = Rover()
         let commands = ["R", "F"]
         
-        commands.forEach{ rover.buffer.append($0) }
+        rover.addCommandsToBuffer(commands)
         
-        XCTAssertEqual(rover.buffer, commands)
-        
+        XCTAssertEqual(rover.getCommandBuffer(), commands)
     }
     
+    func testImplementingForwardBackwardMovement() {
+        
+    }
     
 }

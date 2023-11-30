@@ -19,13 +19,21 @@ struct Rover {
         "R" : TurnRight()
     ]
     
-    var buffer: [String] = []
-    var orderQueue: [Command] = []
+   private var buffer: [String] = []
+   private var orderQueue: [Command] = []
     
     mutating func addToOrderQueue() {
         buffer.forEach { order in
             orderQueue.append( Self.directives[order]! )
         }
+    }
+    
+    mutating func addCommandsToBuffer(_ commands: [String]) {
+        buffer.append(contentsOf: commands)
+    }
+    
+    func getCommandBuffer() -> [String] {
+        buffer
     }
     
 }
