@@ -14,6 +14,8 @@
 		4FB3A3AA2B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3A3A92B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDTests.swift */; };
 		4FB3A3B42B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3A3B32B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDUITests.swift */; };
 		4FB3A3B62B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3A3B52B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDUITestsLaunchTests.swift */; };
+		4FB3A3C32B191F0D008369F5 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3A3C22B191F0D008369F5 /* Commands.swift */; };
+		4FB3A3C52B192DDA008369F5 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3A3C42B192DDA008369F5 /* Rover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4FB3A3AF2B190F1F008369F5 /* Mars Rover Command Design Pattern TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mars Rover Command Design Pattern TDDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB3A3B32B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mars_Rover_Command_Design_Pattern_TDDUITests.swift; sourceTree = "<group>"; };
 		4FB3A3B52B190F1F008369F5 /* Mars_Rover_Command_Design_Pattern_TDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mars_Rover_Command_Design_Pattern_TDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FB3A3C22B191F0D008369F5 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		4FB3A3C42B192DDA008369F5 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				4FB3A3982B190F1E008369F5 /* Mars_Rover_Command_Design_Pattern_TDDApp.swift */,
 				4FB3A39A2B190F1E008369F5 /* ContentView.swift */,
+				4FB3A3C42B192DDA008369F5 /* Rover.swift */,
+				4FB3A3C22B191F0D008369F5 /* Commands.swift */,
 				4FB3A39C2B190F1F008369F5 /* Assets.xcassets */,
 				4FB3A39E2B190F1F008369F5 /* Preview Content */,
 			);
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB3A3C52B192DDA008369F5 /* Rover.swift in Sources */,
 				4FB3A39B2B190F1E008369F5 /* ContentView.swift in Sources */,
+				4FB3A3C32B191F0D008369F5 /* Commands.swift in Sources */,
 				4FB3A3992B190F1E008369F5 /* Mars_Rover_Command_Design_Pattern_TDDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
