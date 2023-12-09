@@ -30,6 +30,7 @@ struct Rover {
     
     mutating func addCommandsToBuffer(_ commands: [String]) {
         buffer.append(contentsOf: commands)
+        addToOrderQueue()
     }
     
     func getCommandBuffer() -> [String] {

@@ -26,7 +26,11 @@ final class Mars_Rover_Command_Design_Pattern_TDDTests: XCTestCase {
     }
     
     func testImplementingForwardBackwardMovement() {
+        var rover = Rover()
+        let commands = ["B"]
+        rover.addCommandsToBuffer(commands)
         
+        XCTAssertEqual(rover.yPos, -1)
     }
     
 }
